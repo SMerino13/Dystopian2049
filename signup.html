@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Create Account</title>
+    <link rel="stylesheet" href="style/signup.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Audiowide"
+    />
+  </head>
+  <body>
+      <div class="navbar">
+        <p class="nav-title"><a href="index.html">Dystopia 2049</a></p>
+        <ul>
+          <li>
+            <a href="index.html">Home</a>
+          </li>
+          <li>
+            <a href="login.html">Login</a>
+          </li>
+          <li>
+            <a href="#">About Us</a>
+          </li>
+        </ul>
+      </div>
+    <!-- <video src="signup.mp4" style="z-index: -1;"></video> -->
+    <div class="body1">
+      <video autoplay loop plays-inline class="back-video" id="bg-video">
+        <source src="vid/login_background.mp4" type="video/mp4" />
+      </video>
+      <div class="container">
+        <form action="" method="POST">
+          <h2>Create Your Account</h2>
+          <div class="content">
+            <div class="input-section">
+              <label for="name">First Name</label>
+              <input
+                type="text"
+                placeholder="Enter first name"
+                name="Fname"
+                required
+              />
+            </div>
+            <div class="input-section">
+              <label for="name">Last Name</label>
+              <input
+                type="text"
+                placeholder="Enter last name"
+                name="Lname"
+                required
+              />
+            </div>
+            <div class="input-section">
+              <label for="name">Email</label>
+              <input
+                type="text"
+                placeholder="email@email.com"
+                name="email"
+                required
+              />
+            </div>
+            <div class="input-section">
+              <label for="name">Username</label>
+              <input
+                type="text"
+                placeholder="Enter a username"
+                name="Username"
+                required
+              />
+            </div>
+            <div class="input-section">
+              <label for="name">Password</label>
+              <input
+                type="password"
+                placeholder="Enter Password"
+                name="Pwd"
+                required
+              />
+            </div>
+            <div class="input-section">
+              <label for="name">Confirm Password</label>
+              <input
+                type="password"
+                placeholder="Confirm Password"
+                name="confirmPwd"
+                required
+              />
+            </div>
+            <span class="gender">Gender</span>
+            <div class="gender-category">
+              <input type="radio" name="gender" id="male" />
+              <label for="male">Male</label>
+              <input type="radio" name="gender" id="female" />
+              <label for="male">Female</label>
+              <input type="radio" name="gender" id="Replciant" />
+              <label for="male">Replciant</label>
+              <!-- <input type="radio" name="gender" id="male">
+            <label for="male">Male</label> -->
+            </div>
+          </div>
+          <div class="alert">
+            <p>
+              By signing up, you are agreeing to our <a href="#">Terms</a>,
+              <a href="#">Privacy</a>, and <a href="#">Policy</a>.
+            </p>
+          </div>
+          <div class="button-container">
+            <button>Create Account</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <script src="scripts/signup.js"></script>
+  </body>
+</html>

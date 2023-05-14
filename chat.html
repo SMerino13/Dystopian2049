@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+      integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style/chat.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Audiowide"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="header">
+      <p>Welcome, Specter</p>
+      <nav class="nav_bar">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#">Account</a></li>
+          <li><a href="#">Explore</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="wrappers">
+      <div class="left_wrapper">
+        <div class="search_div">
+          <input class="search_bar" type="text" placeholder="Search.." />
+          <button class="search_button">Explore</button>
+        </div>
+        <div class="chat_header">
+          <p>Your Conversations</p>
+        </div>
+        <div class="chat_select">
+          <a
+            href="javascript:changeTab('ch1', 'Chat1');"
+            id="ch1"
+            class="chat_name active"
+            >Loveless</a
+          >
+          <div class="chat_desc">
+            <span class="desc">Pain and only pain</span>
+            <span class="date_posted">June 21</span>
+          </div>
+        </div>
+        <div class="chat_select">
+          <a
+            href="javascript:changeTab('ch2', 'Chat2');"
+            id="ch2"
+            class="chat_name"
+            >Interlinked</a
+          >
+          <div class="chat_desc">
+            <span class="desc">I am with pain</span>
+            <span class="date_posted">March 20</span>
+          </div>
+        </div>
+      </div>
+      <div class="middle_wrapper">
+        <div class="inner-middle-wrapper">
+          <div class="chat-selection">
+            <div class="mesgs" id="Chat1">
+              <div class="incoming_msg">
+                <div class="incoming_msg_img">
+                  <img src="img/BladeRunner.jpg" />
+                </div>
+                <div class="received_msg">
+                  <div class="received_withd_msg">
+                    <p>Even if the morrow is barren of promises.</p>
+                    <span class="time_date"> 9:01 AM | June 9</span>
+                  </div>
+                </div>
+              </div>
+              <div class="outgoing_msg">
+                <div class="sent_msg">
+                  <p>Nothing shall forestall my return.</p>
+                  <span class="time_date"> 10:02 AM | June 9</span>
+                </div>
+                <div class="received_msg_img">
+                  <p>You</p>
+                  <img src="img/BladeRunner.jpg" />
+                </div>
+              </div>
+              <div class="outgoing_msg">
+                <div class="sent_msg">
+                  <p>To become the dew that quenches the land.</p>
+                  <span class="time_date"> 11:03 AM | June 9</span>
+                </div>
+                <div class="received_msg_img">
+                  <p>You</p>
+                  <img src="img/BladeRunner.jpg" />
+                </div>
+              </div>
+              <div class="outgoing_msg">
+                <div class="sent_msg">
+                  <p>To spare the sands, the seas, the skies.</p>
+                  <span class="time_date"> 12:03 AM | June 9</span>
+                </div>
+                <div class="received_msg_img">
+                  <p>You</p>
+                  <img src="img/BladeRunner.jpg" />
+                </div>
+              </div>
+              <div class="incoming_msg">
+                <div class="incoming_msg_img">
+                  <img src="img/BladeRunner.jpg" />
+                </div>
+                <div class="received_msg">
+                  <div class="received_withd_msg">
+                    <p>I offer thee this silent sacrifice.</p>
+                    <span class="time_date"> 12:04 AM | June 9</span>
+                  </div>
+                </div>
+              </div>
+              <div class="outgoing_msg">
+                <div class="sent_msg">
+                  <p>Act V, Loveless.</p>
+                  <span class="time_date"> 11:01 AM | June 9</span>
+                </div>
+                <div class="received_msg_img">
+                  <p>You</p>
+                  <img src="img/BladeRunner.jpg" />
+                </div>
+              </div>
+              <div class="incoming_msg">
+                <div class="incoming_msg_img">
+                  <img src="img/BladeRunner.jpg" />
+                </div>
+                <div class="received_msg">
+                  <div class="received_withd_msg">
+                    <p>Interlinked</p>
+                    <img src="img/middle-header.jpg" alt="" />
+                    <span class="time_date"> 11:01 AM | June 9</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--  -->
+            <div class="mesgs" id="Chat2" style="display: none">
+              <div class="incoming_msg">
+                <div class="incoming_msg_img">
+                  <img src="img/BladeRunner.jpg" />
+                </div>
+                <div class="received_msg">
+                  <div class="received_withd_msg">
+                    <p>Test which is a new approach to have all solutions</p>
+                    <span class="time_date"> 11:01 AM | June 9</span>
+                  </div>
+                </div>
+              </div>
+              <div class="outgoing_msg">
+                <div class="sent_msg">
+                  <p>Test which is a new approach to have all solutions</p>
+                  <span class="time_date"> 11:01 AM | June 9</span>
+                </div>
+                <div class="received_msg_img">
+                  <img src="img/BladeRunner.jpg" />
+                </div>
+              </div>
+              <div class="incoming_msg">
+                <div class="incoming_msg_img">
+                  <img src="img/BladeRunner.jpg" />
+                </div>
+                <div class="received_msg">
+                  <div class="received_withd_msg">
+                    <p>Together we are interlinked. This is chat 2.</p>
+                    <span class="time_date"> 11:01 AM | June 9</span>
+                  </div>
+                </div>
+              </div>
+              <div class="outgoing_msg">
+                <div class="sent_msg">
+                  <p>The name of this position is lonely.</p>
+                  <span class="time_date"> 11:01 AM | June 9</span>
+                </div>
+                <div class="received_msg_img">
+                  <img src="img/BladeRunner.jpg" />
+                </div>
+              </div>
+              <div class="incoming_msg">
+                <div class="incoming_msg_img">
+                  <img src="img/BladeRunner.jpg" />
+                </div>
+                <div class="received_msg">
+                  <div class="received_withd_msg">
+                    <p>Interlinked</p>
+                    <img src="img/tester.jpg" alt="" />
+                    <span class="time_date"> 11:01 AM | June 9</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--  -->
+          </div>
+          <!--  -->
+
+          <!--  -->
+        </div>
+        <div class="input-message">
+          <div class="message-send">
+            <span class="attach_btn"><i class="fas fa-paperclip"></i></span>
+            <textarea
+              name=""
+              class="form-control type_msg"
+              placeholder="Type your message..."
+            ></textarea>
+            <span class="send_btn"><i class="fas fa-location-arrow"></i></span>
+          </div>
+        </div>
+      </div>
+      <div class="right_wrapper">
+        <div class="mesgs" id="Chat1">
+          <button type="button" class="collapsible">Chat Description</button>
+          <div class="content">
+            <p>
+              Loveless, also stylized as LOVELESS, is an epic from the world of
+              Final Fantasy VII that has made several cameo appearances in the
+              Compilation of Final Fantasy VII and plays a major role in Crisis
+              Core -Final Fantasy VII-. Originating as a book of poetry, the
+              story has been adapted into a musical stage play and has a street
+              named after it in Midgar.
+            </p>
+            <br />
+            <span class="creator">Created by: Harvey Specter</span>
+          </div>
+          <button type="button" class="collapsible">People</button>
+          <div class="content">
+            <div class="user-info">
+              <!-- <img src="img/BladeRunner.jpg" /> -->
+              <p><a href="#">BladeRunner John</a></p>
+            </div>
+            <div class="user-info">
+              <!-- <img src="img/BladeRunner.jpg" /> -->
+              <p><a href="#">Harvey Specter</a>[You]</p>
+            </div>
+          </div>
+          <button type="button" class="collapsible">Related</button>
+          <div class="content">
+            <p>This is a placeholder</p>
+          </div>
+        </div>
+        <!--  -->
+        <div class="mesgs" id="Chat2" style="display: none">
+          <button type="button" class="collapsible">Chat Description</button>
+          <div class="content">
+            <p>Soldier first class Zack. We are doing the best to fix this.</p>
+            <br />
+            <span class="creator">Created by: Harvey Specter</span>
+          </div>
+          <button type="button" class="collapsible">People</button>
+          <div class="content">
+            <div class="user-info">
+              <!-- <img src="img/BladeRunner.jpg" /> -->
+              <p><a href="#">BladeRunner John</a></p>
+            </div>
+            <div class="user-info">
+              <!-- <img src="img/BladeRunner.jpg" /> -->
+              <p><a href="#">Harvey Specter</a>[You]</p>
+            </div>
+          </div>
+          <button type="button" class="collapsible">Placeholder</button>
+          <div class="content">
+            <p>This is a placeholder</p>
+          </div>
+        </div>
+        <!--  -->
+      </div>
+    </div>
+    <script src="scripts/chat.js"></script>
+  </body>
+</html>

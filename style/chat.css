@@ -1,0 +1,417 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family: sans-serif; */
+}
+
+.header{
+    align-items: right;
+    position: relative;
+    background-image: linear-gradient(#493600, 
+        #000000e6);
+    height: 50px;
+    width: 100%;
+    justify-content:space-around;
+    align-items: center;
+    display: flex;
+    font-family: "Audiowide", sans-serif;
+}
+
+.header p{
+    font-size: 25px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.header .nav_bar{
+    position: relative;
+    padding: 15px;
+    left: 150px;
+    justify-content:right;
+    align-items: center;
+    width: 50%;
+}
+
+.header .nav_bar ul{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.header .nav_bar ul li{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.header .nav_bar ul li a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-weight: 600;
+}
+
+.nav_bar ul li a::after{
+    content: '';
+    height: 1px;
+    width: 0%;
+    background: #964b00;
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    transition: 0.7s;
+}
+
+.nav_bar ul li a:hover::after{
+    width: 100%;
+}
+
+.wrappers{
+    display: grid;
+    grid-template-columns: 2.5fr 5fr 2.5fr;
+    height: 97vh;
+}
+
+.wrappers .left_wrapper{
+    position: relative;
+    display: block;
+    background-image: linear-gradient(rgba(0,0,0,0.90), 
+        rgba(0,0,0,0.25)),url(../img/left-header1.jpg);
+    border-right: 2px solid #000;
+    background-size: cover;
+    background-position: center;
+}
+
+.wrappers .left_wrapper .search_div{
+    display: flex;
+    height: 50px;
+    align-items: center;
+    padding: 3%;
+    justify-content: space-evenly;
+    border-bottom: 1px solid #000;
+}
+
+.wrappers .left_wrapper .search_div .search_bar{
+    position: absolute;
+    padding: 10px;
+    left: 20px;
+    height: 30px;
+    border-radius: 50px;
+    width: 50%;
+    font-family: "Audiowide", sans-serif;
+    background-image: linear-gradient(rgba(255, 177, 31, 0.9), 
+    rgba(10, 51, 61, 0.25));
+    color: #000;
+}
+
+.wrappers .left_wrapper .search_div .search_button{
+    position: absolute;
+    right: 100px;
+    height: 30px;
+    width: 100px;
+    border-radius: 50px;
+    font-family: "Audiowide", sans-serif;
+    background-image: linear-gradient(rgba(255, 177, 31, 0.9), 
+    rgba(29, 210, 255, 0.25));
+}
+
+.wrappers .left_wrapper .chat_header{
+    color: #fff;
+    margin: 30px;
+    font-family: "Audiowide", sans-serif;
+    text-transform: uppercase;
+    width: 90%;
+    border-top: 3px solid #fff;
+    border-bottom: 3px solid #fff;
+    padding: 10px;
+}
+
+.wrappers .left_wrapper .chat_select{
+    display: block;
+    height: 90px;
+    padding: 15px;
+    justify-content: space-evenly;
+    border: 3px solid #f8bf21;
+    border-radius: 12px;
+    margin: 25px;
+    background-color:rgba(45, 20, 79, 0.25);
+    width: 93%;
+    color: #fff;
+    transition: 0.5s;
+}
+
+.left_wrapper .chat_select:hover{
+    box-shadow: 0 6px 9px rgba(0, 200, 255, 0.845);
+}
+
+.wrappers .left_wrapper .chat_select .chat_name{
+    text-decoration: none;
+    color: rgb(0, 179, 255);
+    font-family: "Audiowide", sans-serif;
+    padding: 21px;
+}
+
+.wrappers .left_wrapper .chat_select .chat_desc{
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 13px;
+    font-family: "Audiowide", sans-serif;
+}
+
+.wrappers .middle_wrapper{
+    position: relative;
+    background-image: linear-gradient(rgba(0,0,0,0.90), 
+    rgba(0,0,0,0.25)),url(../img/middle-header1.jpg);
+        /* background-size:contain; */
+    background-position: center;
+    border-right: 2px solid #000;
+    /* padding: 5px; */
+    overflow:hidden;
+}
+
+.wrappers .middle_wrapper .inner-middle-wrapper{
+    background-color: rgba(255, 255, 255, 0);
+    margin-top: 60px;
+    height: 80vh;
+    border-radius: 25px;
+    /* border: 2px solid #000; */
+    padding-bottom: 15px;
+    overflow: scroll;
+}
+
+.wrappers .middle_wrapper .inner-middle-wrapper::-webkit-scrollbar{
+    width: 0px;
+}
+
+.incoming_msg_img {
+    display: inline-block;
+    width: 6%;
+    padding: 0px;
+}
+
+.incoming_msg_img img{
+    width: 40px;
+    border-radius: 50px;
+}
+
+.outgoing_msg{
+    display: block;
+    justify-content: center;
+    align-items: center;}
+
+.received_msg {
+    display: inline-block;
+    padding: 0 0 0 10px;
+    vertical-align: top;
+    width: 92%;
+}
+
+.received_msg, .incoming_msg img {
+    width: 80%;
+    border-radius: 29px;
+}
+
+.received_msg_img{
+    /* padding-left: 95%; */
+    display: flex;
+    justify-content:end;
+    align-items: center;
+    font-family: "Audiowide", sans-serif;
+    color: #f8bf21;
+}
+
+.received_msg_img img{
+    width: 9%;
+    border-radius: 50px;
+    bottom: 80px;
+}
+
+.received_withd_msg p {
+    background: #ffffff none repeat scroll 0 0;
+    border-radius: 7px;
+    border: 3px solid #00b3ff;
+    color: rgb(0, 0, 0);
+    font-size: 15px;
+    padding: 5px 10px 5px 12px;
+    width: 100%;
+    font-family: "Kanit", sans-serif;
+    box-shadow: 0 6px 9px rgba(0, 200, 255, 0.845);
+}
+
+.time_date {
+    color: #f8bf21;
+    display: block;
+    font-size: 12px;
+    margin: 8px 0 0;
+    font-family: "Audiowide", sans-serif;
+    font-style: italic;
+}
+
+.received_withd_msg { 
+    width: 57%;
+}
+
+.mesgs {
+    float: left;
+    padding: 30px 15px 0 25px;
+    width: 98%;
+}
+  
+.sent_msg p {
+    background: #ffffff none repeat scroll 0 0;
+    border-radius: 7px;
+    border: 3px solid #f8bf21;
+    font-size: 15px;
+    margin: 0; color:#fff;
+    padding: 5px 10px 5px 12px;
+    width:100%;
+    font-family: "Kanit", sans-serif;
+    color: #000;
+    box-shadow: 0 6px 9px #f8bf21;
+}
+  
+.outgoing_msg{ 
+    overflow:hidden; 
+    margin:26px 0 26px;
+    justify-content: center;
+}
+.outgoing_msg p{ 
+    padding: 10px;
+}
+
+.sent_msg {
+    float: right;
+    width: 46%;
+    padding-right: 0px;
+}
+
+.wrappers .middle_wrapper .message-send{
+    width: 100%;
+    background-color: rgba(73, 38, 190, 0.14);
+    border-radius: 30px;
+    padding: 5px;
+}
+/* BOTTOM MIDDLE  */
+.wrappers .middle_wrapper .input-message {
+    display: flex;
+    width: 80%;
+    padding: 20px;
+    align-items: center;
+    height: 10vh;
+}
+
+.wrappers .middle_wrapper .input-message .attach_btn{
+    color: #fff;
+    position: relative;
+    bottom: 25px;
+}
+
+.wrappers .middle_wrapper .input-message textarea{
+    width: 90%;
+    height: 55px;
+    border-radius: 15px;
+    margin: 10px;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: 500px;
+    align-items: center;
+}
+
+.wrappers .middle_wrapper .input-message .send_btn{
+    color: #fff;
+    position: relative;
+    bottom: 25px;
+}
+/* END BUTTOM MIDDLE */
+.wrappers .right_wrapper{
+    background-image: linear-gradient(rgba(0,0,0,0.90), 
+        rgba(0,0,0,0.25)),url(../img/left-header1.jpg);
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    overflow-y: scroll;
+}
+
+.wrappers .right_wrapper::-webkit-scrollbar{
+    width: 0px;
+}
+
+/* Style the button that is used to open and close the collapsible content */
+.wrappers .right_wrapper .collapsible {
+    background-color: rgba(238, 238, 238,0.6);
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    border-radius: 5px;
+}
+
+.wrappers .right_wrapper .collapsible{
+    background-color: #00b3ff;
+    box-shadow: 0 6px 9px #f3a909;
+    font-family: "Audiowide", sans-serif;
+    transition: 0.5s;
+}
+
+  /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.wrappers .right_wrapper .collapsible:hover {
+    background-color: #f3a909;
+    box-shadow: 0 6px 9px #00b3ff;
+}
+
+  .wrappers .right_wrapper .active, .collapsible:hover {
+    background-color: #f3a909;
+    box-shadow: 0 6px 9px rgba(0, 200, 255, 0.845);
+}
+
+.collapsible:after {
+    content: '\02795'; /* Unicode character for "plus" sign (+) */
+    font-size: 13px;
+    color: white;
+    float: right;
+    margin-left: 5px;
+}
+  
+.active:after {
+    content: "\2796"; /* Unicode character for "minus" sign (-) */
+}
+  
+  /* Style the collapsible content. Note: hidden by default */
+.wrappers .right_wrapper .content{
+    padding: 3px 18px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: rgba(255, 255, 255, 0.2);
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    color: #000;
+    border-radius: 5px;
+    font-family: "Audiowide", sans-serif;
+}
+
+.wrappers .right_wrapper .content img{
+    width: 40px;
+    border-radius: 50px;
+    display: none;
+    position: relative;
+}
+
+.wrappers .right_wrapper .content a{
+    text-decoration: none;
+    color: rgb(0, 179, 255);
+    font-weight: 400;
+    margin-right: 12px;
+}
+
+.wrappers .right_wrapper .content .user-info p{
+    color: #f8bf21;
+    padding: 2px;
+}
+
+
+
