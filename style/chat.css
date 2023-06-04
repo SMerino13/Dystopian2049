@@ -389,7 +389,7 @@
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.2s ease-out;
-    color: #000;
+    color: #ffffff;
     border-radius: 5px;
     font-family: "Audiowide", sans-serif;
 }
